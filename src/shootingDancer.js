@@ -1,18 +1,15 @@
 var ShootingDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('shooting');
-  this.top = top;
-  this.left = left;
   this.direction = true;
 };
 
 ShootingDancer.prototype = Object.create(Dancer.prototype);
 ShootingDancer.prototype.constructor = ShootingDancer;
 
-ShootingDancer.prototype.step = function(timeBetweenSteps) {
+ShootingDancer.prototype.step = function() {
   
   var currentDancer = this;
-  console.log($('body').height());
 
   if (this.direction === true ) {
     currentDancer.top += 10;
@@ -27,11 +24,12 @@ ShootingDancer.prototype.step = function(timeBetweenSteps) {
   currentDancer.setPosition((currentDancer.top), currentDancer.left);
   
   this.dance = setTimeout(function() { 
-    currentDancer.step(timeBetweenSteps);
+    currentDancer.step(currentDancer.timeBetweenSteps);
   }, 50);
 };
 
-ShootingDancer.prototype.lineUp = function (i) {
+ShootingDancer.prototype.lineUp = function (i, length) {
   clearTimeout(this.dance);
-  this.setPosition(($('body').height() / 2) + 20, 100 + 120 * i);
+  this.setPosition($('body').height() / 2, $('body').width() / (length + 5) * i);
+  this.linedUp = true;
 };
