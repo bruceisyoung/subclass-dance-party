@@ -16,6 +16,6 @@ CircleDancer.prototype.step = function() {
 
 CircleDancer.prototype.lineUp = function (i, length) {
   this.$node.css('animation', 'none');
-  this.setPosition($('body').height() / 2, $('body').width() / (length + 5) * i);
+  this.setPosition(($('body').height() / 5) * 4, $('body').width() / (length + 5) * i);
   this.linedUp = true;
 };

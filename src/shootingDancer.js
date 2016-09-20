@@ -17,7 +17,7 @@ ShootingDancer.prototype.step = function() {
     currentDancer.top -= 10;
   }
 
-  if (currentDancer.top > $('body').height() - 20 || currentDancer.top < 38 ) {
+  if (currentDancer.top > $('body').height() - 80 || currentDancer.top < 38 ) {
     currentDancer.direction = !currentDancer.direction;
   }
 
@@ -30,6 +30,6 @@ ShootingDancer.prototype.step = function() {
 
 ShootingDancer.prototype.lineUp = function (i, length) {
   clearTimeout(this.dance);
-  this.setPosition($('body').height() / 2, $('body').width() / (length + 5) * i);
+  this.setPosition(($('body').height() / 5) * 4, $('body').width() / (length + 5) * i);
   this.linedUp = true;
 };

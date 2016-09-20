@@ -19,6 +19,6 @@ BlinkyDancer.prototype.step = function() {
 BlinkyDancer.prototype.lineUp = function (i, length) {
   clearTimeout(this.dance);
   this.$node.show();
-  this.setPosition($('body').height() / 2, $('body').width() / (length + 5) * i);
+  this.setPosition(($('body').height() / 5) * 4, $('body').width() / (length + 5) * i);
   this.linedUp = true;
 };

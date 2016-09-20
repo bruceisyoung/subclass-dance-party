@@ -22,7 +22,7 @@ button:hover {
   float:right;
 }
 
-.lineUp, .party, .clear{
+.buttonLeft{
   padding:5px 12px;
   float:left;
 }
@@ -45,18 +45,21 @@ button:hover {
 .blinky{
   height: 120px;
   width: 120px;
+  background-size: 100%;
   background-image: url("assets/Squidward.gif");
 }
 
 .circle {
   height: 120px;
   width: 120px;
+  background-size: 100%;
   background-image: url("assets/spongebob.gif");
 }
 
 .shooting {
-  height: 90px;
-  width: 90px;
+  height: 120px;
+  width: 120px;
+  background-size: 100%;
   background-image: url("assets/patrick.gif");
 }
 
