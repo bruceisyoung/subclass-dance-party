@@ -32,17 +32,15 @@ body, a:link, a:visited, a:active{
 }
 
 .circle {
-  height: 120px;
-  width: 120px;
   background-image: url("assets/spongebob.gif");
+  background-size: contain;
 }
 
 .shooting {
-  height: 90px;
-  width: 90px;
-  background-image: url("assets/patrick.gif");
+  border-color: forestgreen;
+  border-radius: 0;
 }
 
 @keyframes rotate {
-  100% { transform: rotate(360deg); } }
+  100% { transform: rotate(-360deg); } }
 }

@@ -15,14 +15,7 @@ BlinkyDancer.prototype.step = function(timeBetweenSteps) {
   // other effects you can use on a jQuery-wrapped html tag.
   // currentDancer.$node.toggle();
   this.$node.toggle();
-  this.dance = setTimeout(function() {
+  setTimeout(function() {
     currentDancer.step(timeBetweenSteps);
   }, timeBetweenSteps);
-  //dancing();
-};
-
-BlinkyDancer.prototype.lineUp = function (i) {
-  clearTimeout(this.dance);
-  this.$node.show();
-  this.setPosition($('body').height() / 2, 100 + 120 * i);
 };
