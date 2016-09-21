@@ -42,12 +42,6 @@ $(document).ready(function() {
     }, 400);
   });
 
-/*
-  $(document).on('mousedown', '.dancer', function() {
-    console.log("hahahahaha");
-    $(".draggable").draggable();
-  });  
-  */
 
   $('.lineUp').on('click', function(event) {
     for (var i = 0; i < window.dancers.length; i++) {

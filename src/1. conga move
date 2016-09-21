@@ -1,12 +1,10 @@
 1. conga move
-2. drag an item
 3. keyboard control dancer
 4. picking dancer and dancer image
-5. add an audio
 6. sweet path
 7. two dancers interact
 8. change the background of dance floor
 
-Resize
-classname
-why window.dancers.length would not work
+Resize (checked)
+classname ()
+why window.dancers.length would not work xxxxxxxxxxxxxxxx
